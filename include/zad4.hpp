@@ -4,7 +4,7 @@
 
 // tutaj funkcja obliczMake
 
-double ObliczMake(const std::vector< Tagliatelle >& v)
+double obliczMake(const std::vector< Tagliatelle >& v)
 {
     double M;
     std::size_t i = 1u;
