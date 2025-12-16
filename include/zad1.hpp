@@ -12,7 +12,7 @@ class Tagliatelle
 public:
     Tagliatelle(double dlugosc, double szerokosc, double proporcja) : L(dlugosc), W(szerokosc), R(proporcja) {}
     Tagliatelle() : L(0.5), W(0.5), R(0.5) {}
-    double ileMaki(unsigned P) const { return static_cast< double > (P) * L * W * (1. - R) * C; }
+    double ileMaki(unsigned P) { return P * L * W * (1. - R) * C; }
 
 private:
     double L, W, R;
