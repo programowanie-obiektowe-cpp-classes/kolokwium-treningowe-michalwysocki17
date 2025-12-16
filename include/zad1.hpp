@@ -6,8 +6,16 @@
 
 // Zad1
 // tutaj definicja klasy Tagliatelle
+class Makaron
+{
+    public:
+        virtual ~Makaron() = default;
+        virtual double  ileMaki(unsigned) const = 0;
+        static Makaron* gotujMakaron(const std::string& s);
+}; 
 
-class Tagliatelle
+
+class Tagliatelle : public Makaron
 {
 public:
     Tagliatelle(double dlugosc, double szerokosc, double proporcja) : L(dlugosc), W(szerokosc), R(proporcja) {}
